@@ -32,5 +32,10 @@
     useSandbox = true;
   };
   
+  services.xserver = {
+    enable = true;
+    layout = lib.mkDefault "pl";
+  };
+
   time.timeZone = "Europe/Warsaw"; 
 }
