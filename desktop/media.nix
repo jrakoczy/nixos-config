@@ -19,5 +19,19 @@
     # Support Direct Rendering for 32-bit apps.
     # Wine requires it.
     opengl.dirSupport32Bit = true;
-  }
+  };
+
+  services.xserver = {
+    # enable = true;
+    
+    # Keyboard layout.
+    layout = "pl";
+  
+    # Touchpad support
+    synaptics = {
+      enable = true;
+      twoFingerScroll = true;
+      tapButtons = true;
+    };
+  };
 }
