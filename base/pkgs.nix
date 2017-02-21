@@ -17,6 +17,7 @@
     nix-repl
     unzip
     usbutils
+    vim
     wget
     which
     whois

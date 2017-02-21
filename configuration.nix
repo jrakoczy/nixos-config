@@ -6,7 +6,6 @@
     [ 
       ./base/all.nix
       ./hardware.nix
-      ./packages.nix
       ./passwords.nix
       ./system.nix
     ];
