@@ -4,7 +4,7 @@
 {
   imports =
     [ 
-      ./base/all.nix
+      ./core/all.nix
       ./hardware.nix
       ./passwords.nix
       ./system.nix
