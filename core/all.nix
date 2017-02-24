@@ -5,7 +5,7 @@
 {
   imports =
     [
-      ./aux-daemons.nix
+      ./daemons.nix
       ./env-variables.nix 
       ./networking.nix
       ./system.nix

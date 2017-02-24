@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   services = {
@@ -23,5 +23,19 @@
     
       naturalScrolling = true;
     } 
+  };
+
+  # To make sure all local SSH sessions are closed after a laptop lid is shut.
+  powerManagement.powerDownCommands = ''
+    ${pkgs.procps}/bin/pgrep ssh | IFS= read -r pid; do
+      [ "$(readlink "/proc/$pid/exe")" = "${pkgs.openssh}/bin/ssh" ] && kill "$pid"
+    done  
+  '';
+
+  services = {
+    logind.extraConfig = ''
+      HandleLidSwitch=suspend
+      HandlePowerKey=hibernate
+    '';
   };
 }
