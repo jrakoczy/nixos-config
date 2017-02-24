@@ -6,7 +6,10 @@
     autoUpgrade = {
     
       # A systemd service that runs nixos-rebuild switch --upgrade.
-      enable = true; 
+      enable = true;
+
+      # Auto-upgrade time 
+      dates = "18:00"; 
 
       # Define explicitly.
       channel = https://nixos.org/channels/nixos-16.09;

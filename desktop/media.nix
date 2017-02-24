@@ -9,7 +9,8 @@
     # majorly confusing due to multitude of sound libs, servers and drivers.
     enable = true;
 
-    # Include 32-bit Pulseaudio libs. Wine requires it.
+    # Include 32-bit Pulseaudio libs.
+    # We need it in order for Wine to work. 
     support32bit = true;
   } 
   
@@ -17,7 +18,7 @@
   hardware = {
     
     # Support Direct Rendering for 32-bit apps.
-    # Wine requires it.
+    # We need it in order for Wine to work.
     opengl.dirSupport32Bit = true;
   };
 
