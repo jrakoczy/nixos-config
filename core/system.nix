@@ -14,7 +14,10 @@
       # Define explicitly.
       channel = https://nixos.org/channels/nixos-16.09;
     };
-    
+   
+    # Keep full control over package versions.
+    # If we don't define it explicitly, it may turn out that we upgraded
+    # some packaged to a version that is not backward compatible. 
     stateVersion = "16.09";
   };
 
