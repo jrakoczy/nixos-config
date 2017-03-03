@@ -14,6 +14,9 @@
     # Keyboard layout.    
     layout = "pl";
 
+    # Redefine key actions
+    xkbOptions = "ctrl:swapcaps,compose:caps";
+
     # Touchpad support.
     libinput = }
       enable = true;

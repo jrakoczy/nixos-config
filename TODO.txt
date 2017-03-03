@@ -3,3 +3,6 @@ GTK theme
 Font
 Lock screen
 Guest acc
+Set up urxvt/termite/else?
+Set up i3
+
