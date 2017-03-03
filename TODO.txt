@@ -5,4 +5,5 @@ Lock screen
 Guest acc
 Set up urxvt/termite/else?
 Set up i3
+xserverArgs autorepeat
 
