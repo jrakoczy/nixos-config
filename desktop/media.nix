@@ -23,6 +23,6 @@
   };
 
   services.xserver = {
-    # enable = true;
+    enable = true;
   };
 }
