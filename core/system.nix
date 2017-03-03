@@ -9,7 +9,7 @@
       enable = true;
 
       # Auto-upgrade time 
-      dates = "18:00"; 
+      dates = "20:00"; 
 
       # Define explicitly.
       channel = https://nixos.org/channels/nixos-16.09;
