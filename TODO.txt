@@ -1,9 +1,10 @@
 Android automount
 GTK theme
 Font
-Lock screen
+Lock screen + xautolock
 Guest acc
 Set up urxvt/termite/else?
 Set up i3
 xserverArgs autorepeat
 Compton
+buildCores ?
