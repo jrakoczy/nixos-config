@@ -37,6 +37,4 @@
     # Prevent from accessing dependencies from outside of the Nix store.
     useSandbox = true;
   };
-  
-  time.timeZone = "Europe/Warsaw"; 
 }

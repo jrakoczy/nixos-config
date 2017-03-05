@@ -8,5 +8,6 @@
       ./devices.nix
       ./media.nix
       ./pkgs.nix
+      ./system.nix
     ];
 }
