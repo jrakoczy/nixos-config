@@ -8,3 +8,6 @@ Set up i3
 xserverArgs autorepeat
 Compton
 buildCores ?
+xcape vim Esc
+Redshift or xrandr-invert-colors
+xclip xsel
