@@ -11,3 +11,9 @@ buildCores ?
 xcape vim Esc
 Redshift or xrandr-invert-colors
 xclip xsel
+Desktop pkgs:
+	- libreoffice
+	- tex
+	- video + music players
+nosudo poweroff/reboot/logout
+passwords SHAs
