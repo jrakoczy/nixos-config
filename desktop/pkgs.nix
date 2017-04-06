@@ -20,4 +20,10 @@
     winetricks
     xbanish                  # Hide a cursor when typing.
   ];
+
+  # Grsecurity requires a process to have CAP_SYS_ADMIN 
+  # capabilities to create a new user namespace. Since
+  # Chromium namesapces for sandboxing we need to use
+  # a privileged helper.
+  security.chromiumSuidSandbox.enable = true;
 }
