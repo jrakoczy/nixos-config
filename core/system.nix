@@ -1,5 +1,12 @@
 { lib, ... }:
 
+let
+
+  # Defines when to perform system maintenance tasks such as
+  # package updates and clean ups.
+  maintenanceTime = "20:00";
+in
+
 { 
   system = {
 
@@ -9,7 +16,7 @@
       enable = true;
 
       # Auto-upgrade time 
-      dates = "20:00"; 
+      dates = maintenanceTime; 
 
       # Define explicitly.
       channel = https://nixos.org/channels/nixos-16.09;
@@ -36,5 +43,11 @@
 
     # Prevent from accessing dependencies from outside of the Nix store.
     useSandbox = true;
+    
+    # Clean up old, unreferenced packages.
+    gc = {
+      automatic = true;
+      dates = maintenanceTime;
+    };
   };
 }
