@@ -11,15 +11,15 @@
 
     # Include 32-bit Pulseaudio libs.
     # We need it in order for Wine to work. 
-    support32bit = true;
+    support32Bit = true;
   }; 
   
   # Display
-  hardware = {
+  hardware.opengl = {
     
     # Support Direct Rendering for 32-bit apps.
     # We need it in order for Wine to work.
-    opengl.dirSupport32Bit = true;
+    dirSupport32Bit = true;
   };
 
   services.xserver = {
