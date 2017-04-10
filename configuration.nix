@@ -5,6 +5,7 @@
   imports =
     [ 
       ./core/all.nix
+      ./desktop/all.nix
       ./hardware.nix
       ./passwords.nix
       ./system.nix
