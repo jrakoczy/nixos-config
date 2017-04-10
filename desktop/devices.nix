@@ -2,30 +2,38 @@
 
 {
   services = {
+    
     printing = {
       enable = true;
     
       # Printer drivers.
       gutenprint = true;
-   };
+    };
 
-  xserver = {
+    xserver = {
 
-    # Keyboard layout.    
-    layout = "pl";
+      # Keyboard layout.    
+      layout = "pl";
 
-    # Redefine key actions
-    xkbOptions = "ctrl:swapcaps,compose:caps";
+      # Redefine key actions
+      xkbOptions = "ctrl:swapcaps,compose:caps";
 
-    # Touchpad support.
-    libinput = }
-      enable = true;
+      # Touchpad support.
+      libinput = {
+
+        enable = true;
       
-      # Left + right click emulates middle button.
-      middleEmulation = true;
+        # Left + right click emulates middle button.
+        middleEmulation = true;
     
-      naturalScrolling = true;
-    } 
+        naturalScrolling = true;
+      }; 
+    };
+
+    logind.extraConfig = ''
+      HandleLidSwitch=suspend
+      HandlePowerKey=hibernate
+    '';
   };
 
   # To make sure all local SSH sessions are closed after a laptop lid is shut.
@@ -34,11 +42,4 @@
       [ "$(readlink "/proc/$pid/exe")" = "${pkgs.openssh}/bin/ssh" ] && kill "$pid"
     done  
   '';
-
-  services = {
-    logind.extraConfig = ''
-      HandleLidSwitch=suspend
-      HandlePowerKey=hibernate
-    '';
-  };
 }

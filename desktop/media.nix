@@ -12,7 +12,7 @@
     # Include 32-bit Pulseaudio libs.
     # We need it in order for Wine to work. 
     support32bit = true;
-  } 
+  }; 
   
   # Display
   hardware = {
