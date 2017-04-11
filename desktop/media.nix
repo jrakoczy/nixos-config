@@ -19,7 +19,7 @@
     
     # Support Direct Rendering for 32-bit apps.
     # We need it in order for Wine to work.
-    dirSupport32Bit = true;
+    driSupport32Bit = true;
   };
 
   services.xserver = {
