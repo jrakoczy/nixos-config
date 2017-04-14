@@ -13,4 +13,6 @@
     home = "/root";
     extraGroups = [ "wheel" "networkmanager" ];
   }
+
+  nix.trustedUsers = [ "@wheel" ];
 }
