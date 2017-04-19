@@ -48,6 +48,9 @@ in
     gc = {
       automatic = true;
       dates = maintenanceTime;
+      
+      # Delete old and unused profile generations. 
+      options = "--delete-older-than 90d"; 
     };
   };
 }
