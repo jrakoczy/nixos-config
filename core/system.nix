@@ -36,7 +36,6 @@ in
     #                  outside the Nix search path (make sure that 
     #                  NIX_PATH is defined appropriately).
     extraOptions = ''
-      build-cache-failure = true
       auto-optimise-store = true
       restrict-eval = true
     '';
@@ -50,7 +49,7 @@ in
       dates = maintenanceTime;
       
       # Delete old and unused profile generations. 
-      options = "--delete-older-than 90d"; 
+      options = "--delete-older-than 60d"; 
     };
   };
 }
