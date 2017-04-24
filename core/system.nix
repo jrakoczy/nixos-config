@@ -5,6 +5,8 @@ let
   # Defines when to perform system maintenance tasks such as
   # package updates and clean ups.
   maintenanceTime = "20:00";
+
+  nixosVersion = "17.03";
 in
 
 { 
@@ -19,13 +21,13 @@ in
       dates = maintenanceTime; 
 
       # Define explicitly.
-      channel = https://nixos.org/channels/nixos-16.09;
+      channel = "https://nixos.org/channels/nixos-${nixosVersion}";
     };
    
     # Keep full control over package versions.
     # If we don't define it explicitly, it may turn out that we upgraded
     # some packaged to a version that is not backward compatible. 
-    stateVersion = "17.03";
+    stateVersion = nixosVersion;
   };
 
   nix = {
