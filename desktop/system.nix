@@ -8,5 +8,7 @@
   # This is a potential cause of various compatibility issues,
   # so bear in mind that in such cases this is the first place to 
   # look at.
-  security.grsecurity.enable = true;
+  # TODO: currently set to `false` as grsecurity free support has 
+  # been ceased.
+  security.grsecurity.enable = false;
 }
