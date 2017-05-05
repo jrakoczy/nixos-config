@@ -4,17 +4,20 @@
   environment.systemPackages = with pkgs; [
     arandr                   
     cdrkit                   # CD/DVD utilities.
-    chromium
+    # chromium
     evince
     ffmpeg
     keepass
-    libreoffice
+    # libreoffice
     networkmanagerapplet
     openjdk8
     pavucontrol           
     rofi                     # A window switcher + run dialogue (substitutes dmenu).
-    texLive
-    texLiveBeamer
+    (
+      texlive.combine { 
+        inherit (texlive) scheme-small beamer;
+      }
+    )
     visualvm
     (wine.override { pulseaudioSupport = true; })
     winetricks
