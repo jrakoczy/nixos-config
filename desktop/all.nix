@@ -5,8 +5,8 @@
 {
   imports =
     [
+      ./desktop-env.nix
       ./devices.nix
-      ./media.nix
       ./networking.nix
       ./pkgs.nix
       ./system.nix
