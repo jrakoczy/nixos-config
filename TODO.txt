@@ -12,8 +12,6 @@ xcape vim Esc
 Redshift or xrandr-invert-colors
 xclip xsel
 Desktop pkgs:
-	- libreoffice
-	- tex
-	- video + music players
+	- music player 
 nosudo poweroff/reboot/logout
 passwords SHAs
