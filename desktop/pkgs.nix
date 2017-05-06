@@ -9,6 +9,7 @@
     ffmpeg
     keepass
     # libreoffice
+    mpv
     networkmanagerapplet
     openjdk8
     pavucontrol           
@@ -18,7 +19,6 @@
         inherit (texlive) scheme-small beamer;
       }
     )
-    smplayer
     visualvm
     (wine.override { pulseaudioSupport = true; })
     winetricks
