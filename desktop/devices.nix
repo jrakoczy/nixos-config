@@ -18,6 +18,12 @@
       # Redefine key actions
       xkbOptions = "ctrl:swapcaps,compose:caps";
 
+      # Make auto-repeat on key hold work faster.
+      displayManager.xserverArgs = [
+        "-ardelay 300"
+        "-arinterval 20"
+      ];
+
       # Touchpad support.
       libinput = {
 

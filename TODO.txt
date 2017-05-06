@@ -5,7 +5,6 @@ Font
 Lock screen + xautolock
 Guest acc
 Set up urxvt/termite/else?
-xserverArgs autorepeat
 Compton
 buildCores ?
 xcape vim Esc
