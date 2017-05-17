@@ -31,7 +31,11 @@ in
   };
 
   nix = {
-    
+   
+    # The maximum number of build tasks that will be executed in parallel.
+    # The value is passed as make's command -j switch.
+    buildCores = 0;
+ 
     # build-cache-failure -- remember that a given build has failed.
     # auto-optimise-store -- hardlinks instead of duplicate store files. 
     # restrict-eval -- Nix evaluator doesn't have an access to files

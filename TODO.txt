@@ -6,7 +6,6 @@ Lock screen + xautolock
 Guest acc
 Set up urxvt/termite/else?
 Compton
-buildCores ?
 xcape vim Esc
 Redshift or xrandr-invert-colors
 xclip xsel
