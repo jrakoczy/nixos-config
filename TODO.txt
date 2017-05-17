@@ -11,5 +11,4 @@ Redshift or xrandr-invert-colors
 xclip xsel
 Desktop pkgs:
 	- music player 
-nosudo poweroff/reboot/logout
 passwords SHAs
