@@ -1,5 +1,7 @@
 { pkgs, ... }:
-
+let
+  screenBrightness = 0.8;
+in
 {
   # Sound
   hardware.pulseaudio = {
@@ -23,8 +25,19 @@
   };
 
   services = {
-  
-  # Printing  
+
+    # Auto-adjust the screen's color temperature depending on the current time.
+    redshift = {
+      enable = true;
+      latitude = 51.7;
+      longitude = 19.5;
+      brightness = {
+        day = screenBrightness;
+        night = screenBrightness;
+      };
+    };
+
+  # Printing
     printing = {
       enable = true;
     
