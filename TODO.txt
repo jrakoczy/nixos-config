@@ -9,6 +9,4 @@ Compton
 xcape vim Esc
 Redshift or xrandr-invert-colors
 xclip xsel
-Desktop pkgs:
-	- music player 
 passwords SHAs
