@@ -23,6 +23,7 @@
     (wine.override { pulseaudioSupport = true; })
     winetricks
     xbanish                  # Hide a cursor when typing.
+    xrandr-invert-colors
   ];
 
   # Grsecurity requires a process to have CAP_SYS_ADMIN 
