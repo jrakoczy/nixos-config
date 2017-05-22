@@ -1,3 +1,4 @@
+ctrl bind
 Set up i3
 Android automount
 GTK theme
