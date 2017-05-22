@@ -7,6 +7,5 @@ Guest acc
 Set up urxvt/termite/else?
 Compton
 xcape vim Esc
-Redshift or xrandr-invert-colors
 xclip xsel
 passwords SHAs
