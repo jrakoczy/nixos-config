@@ -1,6 +1,6 @@
 { pkgs, ... }:
 let
-  screenBrightness = 0.8;
+  screenBrightness = "0.9";
 in
 {
   # Sound
@@ -29,8 +29,8 @@ in
     # Auto-adjust the screen's color temperature depending on the current time.
     redshift = {
       enable = true;
-      latitude = 51.7;
-      longitude = 19.5;
+      latitude = "52.2";
+      longitude = "21.0";
       brightness = {
         day = screenBrightness;
         night = screenBrightness;
