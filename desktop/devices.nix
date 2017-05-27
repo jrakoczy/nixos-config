@@ -1,7 +1,9 @@
 { pkgs, ... }:
+
 let
   screenBrightness = "0.9";
 in
+
 {
   # Sound
   hardware.pulseaudio = {
