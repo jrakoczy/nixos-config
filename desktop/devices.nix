@@ -54,7 +54,7 @@ in
       layout = "pl";
 
       # Redefine key actions
-      xkbOptions = "ctrl:swapcaps,compose:caps";
+      xkbOptions = "ctrl:nocaps,compose:caps";
 
       # Make auto-repeat on key hold work faster.
       displayManager.xserverArgs = [
