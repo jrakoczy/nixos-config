@@ -9,3 +9,5 @@ Compton
 xcape vim Esc
 xclip xsel
 passwords SHAs
+Keymaps
+.zshrc

@@ -53,8 +53,8 @@ in
       # Keyboard layout.    
       layout = "pl";
 
-      # Redefine key actions
-      xkbOptions = "ctrl:nocaps,compose:caps";
+      # Redefine key actions.
+      xkbOptions = "ctrl:nocaps,compose:caps,rctrl:caps";
 
       # Make auto-repeat on key hold work faster.
       displayManager.xserverArgs = [
