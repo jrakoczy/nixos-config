@@ -11,3 +11,4 @@ xclip xsel
 passwords SHAs
 Keymaps
 .zshrc
+Bind keys
