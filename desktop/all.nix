@@ -5,6 +5,7 @@
 {
   imports =
     [
+      ./desktop.nix
       ./desktop-env.nix
       ./devices.nix
       ./networking.nix
