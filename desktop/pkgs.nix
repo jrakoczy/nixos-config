@@ -19,6 +19,7 @@
         inherit (texlive) scheme-small beamer;
       }
     )
+    scrot
     visualvm
     (wine.override { pulseaudioSupport = true; })
     winetricks
