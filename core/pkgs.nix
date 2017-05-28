@@ -24,5 +24,8 @@
     zip
   ];
 
-  security.setuidPrograms = ["mtr"];
+  # Mtr needs leveraged privileges.
+  security.wrappers = {
+    mtr.source = "${pkgs.mtr}/bin/mtr";
+  };
 }
