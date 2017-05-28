@@ -1,14 +1,17 @@
 Set up i3
+  Revamp scr, song, wal and vol scripts
+  Bind keys
+    xrandr
 Android automount
 GTK theme
 Font
 Lock screen + xautolock
 Guest acc
-Set up urxvt/termite/else?
+Set up urxvt/termite/else? + bind super + enter
 Compton
 xcape vim Esc
 xclip xsel
 passwords SHAs
 Keymaps
 .zshrc
-Bind keys
+Rofi themes
