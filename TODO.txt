@@ -1,7 +1,8 @@
 Set up i3
-  Revamp scr, song, wal and vol scripts
+  Revamp scr, song, wal and vol scripts + notifications
   Bind keys
     xrandr
+    redshift
 Android automount
 GTK theme
 Font
