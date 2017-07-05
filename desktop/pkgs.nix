@@ -7,11 +7,11 @@
     # chromium
     evince
     ffmpeg
-    keepass
+    # keepass
     # libreoffice
     mpv
     networkmanagerapplet
-    openjdk8
+    # openjdk8
     pavucontrol
     rofi                     # A window switcher + run dialogue (substitutes dmenu).
     (
