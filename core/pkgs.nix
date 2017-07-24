@@ -13,11 +13,11 @@
     man_db
     manpages
     mtr
+    neovim
     nix-prefetch-scripts
     nix-repl
     unzip
     usbutils
-    vim
     wget
     which
     whois
