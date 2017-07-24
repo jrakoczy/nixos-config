@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  services =
+  services = {
     xserver = {
       enable = true;
 
@@ -10,6 +10,7 @@
 
         # Use customized i3 version.
         package = pkgs.i3-gaps;
+      };
     };
 
     # The Compton configuration to fix i3 artifacts.
