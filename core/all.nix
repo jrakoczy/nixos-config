@@ -6,7 +6,7 @@
   imports =
     [
       ./daemons.nix
-      ./env-variables.nix 
+      ./env-variables.nix
       ./networking.nix
       ./system.nix
       ./pkgs.nix

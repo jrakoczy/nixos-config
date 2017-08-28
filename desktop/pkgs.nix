@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, jrakoczyPkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -25,7 +25,9 @@
     # winetricks
     xbanish                  # Hide a cursor when typing.
     xrandr-invert-colors
-  ];
+  ] ++ (with jrakoczyPkgs; [
+     desktop-environment      # Manage dot-file the Nix way.
+  ]);
 
   # Grsecurity requires a process to have CAP_SYS_ADMIN
   # capabilities to create a new user namespace. Since
