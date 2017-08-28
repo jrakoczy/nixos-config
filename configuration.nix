@@ -5,13 +5,15 @@
   ...
 }:
 
-let
-
-  # Let's keep this in a separate namespace in case there were any package
-  # name clashes.
-  jrakoczyPkgs = import <jrakoczy-pkgs> {};
-in
 {
+
+  # Extend the list of arguments passed to imported modules.
+  _module.args = {
+    # Let's keep this in a separate namespace in case there were any package
+    # name clashes.
+    jrakoczyPkgs = import <jrakoczy-pkgs> {};
+  };
+
   imports =
     [
       ./core/all.nix
