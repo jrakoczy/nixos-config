@@ -1,3 +1,4 @@
+vim — system clipboard
 Set up i3
   Revamp scr, song, wal and vol scripts + notifications
   Bind keys
