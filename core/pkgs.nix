@@ -16,7 +16,9 @@
     neovim
     nix-prefetch-scripts
     nix-repl
-    python
+    python3
+    python3Packages.flake8
+    python3Packages.neovim
     unzip
     usbutils
     wget
