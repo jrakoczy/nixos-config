@@ -16,6 +16,7 @@
     neovim
     nix-prefetch-scripts
     nix-repl
+    python
     unzip
     usbutils
     wget
