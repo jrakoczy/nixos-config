@@ -21,6 +21,7 @@
     python3Packages.isort
     python3Packages.neovim
     python3Packages.yapf
+    shellcheck
     unzip
     usbutils
     wget
