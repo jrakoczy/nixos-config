@@ -1,3 +1,8 @@
+vim shortcuts
+    rename var/method
+    find usages
+    go to def
+
 vim — system clipboard
 Set up i3
   Revamp scr, song, wal and vol scripts + notifications
