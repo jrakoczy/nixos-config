@@ -1,9 +1,19 @@
 vim shortcuts
+    !! vim-unimpaired !!
     rename var/method
     find usages
     go to def
-
+    tabs
+    yank history
+    indent blocks
+    text object selection
 vim — system clipboard
+vim — autosave
+vim — auto pluginstall plugclean
+vim — fuzzy search root
+vim — godlygeek/tabular
+vim — wellle/visual-split.vim
+vim indent guides colorscheme
 Set up i3
   Revamp scr, song, wal and vol scripts + notifications
   Bind keys
@@ -12,6 +22,7 @@ Set up i3
 Android automount
 GTK theme
 Font
+Vim airline theme
 Lock screen + xautolock
 Guest acc
 Set up urxvt/termite/else? + bind super + enter
