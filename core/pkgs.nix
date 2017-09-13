@@ -5,6 +5,7 @@
     calc
     cloc
     file
+    fzf
     git
     gnupg
     htop
@@ -27,6 +28,7 @@
     wget
     which
     whois
+    xclip
     zip
   ];
 
