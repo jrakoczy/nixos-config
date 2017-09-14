@@ -7,12 +7,10 @@ vim shortcuts
     yank history
     indent blocks
     text object selection
+    fuzzy search out of home dir
+    close(/save?) session
 vim — system clipboard
-vim — autosave
 vim — auto pluginstall plugclean
-vim — fuzzy search root
-vim — godlygeek/tabular
-vim — wellle/visual-split.vim
 vim indent guides colorscheme
 Set up i3
   Revamp scr, song, wal and vol scripts + notifications
@@ -28,7 +26,6 @@ Guest acc
 Set up urxvt/termite/else? + bind super + enter
 Compton
 xcape vim Esc
-xclip xsel
 passwords SHAs
 Keymaps
 .zshrc
