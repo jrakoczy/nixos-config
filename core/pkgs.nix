@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    ag                      # Search for files
     calc
     cloc
     file
