@@ -29,5 +29,6 @@ xcape vim Esc
 passwords SHAs
 Keymaps
 .zshrc
+.gitignore
 Rofi themes
 Move over terminal (Alt+b Alt+f + vim mode)
