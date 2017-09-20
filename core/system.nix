@@ -22,6 +22,11 @@ in
 
       # Define explicitly.
       channel = "https://nixos.org/channels/nixos-${nixosVersion}";
+
+      # Extend NIX_PATH with custom pkgs repo prior to auto-upgrade.
+      # Otherwise it might not be able to resolve '<jrakoczy-pkgs>'
+      # reference used through the configuration.
+      flags = [ "-I" "jrakoczy-pkgs=https://github.com/jrakoczy/aux-nixpkgs/archive/master.tar.gz" ];
     };
 
     # Keep full control over package versions.
@@ -36,7 +41,6 @@ in
     # The value is passed as make's command -j switch.
     buildCores = 0;
 
-    # build-cache-failure -- remember that a given build has failed.
     # auto-optimise-store -- hardlinks instead of duplicate store files.
     # restrict-eval -- Nix evaluator doesn't have an access to files
     #                  outside the Nix search path (make sure that
@@ -55,7 +59,7 @@ in
       dates = maintenanceTime;
 
       # Delete old and unused profile generations.
-      options = "--delete-older-than 60d";
+      options = "--delete-older-than 14d";
     };
   };
 }
