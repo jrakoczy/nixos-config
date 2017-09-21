@@ -17,6 +17,7 @@ Set up i3
   Bind keys
     xrandr
     redshift
+    open terminal
 Android automount
 GTK theme
 Font
