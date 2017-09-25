@@ -7,24 +7,38 @@ in
 {
   # Sound
   hardware.pulseaudio = {
-    
+
     # Proxy all audio via the same sound server.
     # This way we standarize audio pipeline which tends to be
     # majorly confusing due to multitude of sound libs, servers and drivers.
     enable = true;
 
     # Include 32-bit Pulseaudio libs.
-    # We need it in order for Wine to work. 
+    # We need it in order for Wine to work.
     support32Bit = true;
-  }; 
-  
+  };
+
   # Display
   hardware.opengl = {
-    
+
     # Support Direct Rendering for 32-bit apps.
     # We need it in order for Wine to work.
     driSupport32Bit = true;
   };
+
+  fonts = {
+      fonts = with pkgs; [
+        roboto
+        roboto-mono
+      ];
+
+      fontconfig = {
+        defaultFonts = {
+          sansSerif = [ "Roboto" ];
+          monospace = [ "Roboto Mono" ];
+        };
+      };
+   };
 
   services = {
 
@@ -39,10 +53,10 @@ in
       };
     };
 
-  # Printing
+    # Printing
     printing = {
       enable = true;
-    
+
       # Printer drivers.
       gutenprint = true;
     };
@@ -50,7 +64,7 @@ in
   # Input devices
     xserver = {
 
-      # Keyboard layout.    
+      # Keyboard layout.
       layout = "pl";
 
       # Redefine key actions.
@@ -66,12 +80,12 @@ in
       libinput = {
 
         enable = true;
-      
+
         # Left + right click emulates middle button.
         middleEmulation = true;
-    
+
         naturalScrolling = true;
-      }; 
+      };
     };
 
     logind.extraConfig = ''
@@ -85,6 +99,6 @@ in
   powerManagement.powerDownCommands = ''
     ${pkgs.procps}/bin/pgrep ssh | IFS= read -r pid; do
       [ "$(readlink "/proc/$pid/exe")" = "${pkgs.openssh}/bin/ssh" ] && kill "$pid"
-    done  
+    done
   '';
 }
