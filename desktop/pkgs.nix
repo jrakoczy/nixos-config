@@ -8,6 +8,7 @@
     evince
     ffmpeg
     # keepass
+    lemonbar-xft
     # libreoffice
     mpv
     networkmanagerapplet
@@ -23,10 +24,12 @@
     visualvm
     # (wine.override { pulseaudioSupport = true; })
     # winetricks
+    wmctrl
     xbanish                  # Hide a cursor when typing.
     xrandr-invert-colors
   ] ++ (with jrakoczyPkgs; [
-     desktop-environment      # Manage dot-file the Nix way.
+    desktop-environment      # Manage dot-file the Nix way.
+    pywal                      # Adjust colorscheme to wallpaper
   ]);
 
   # Grsecurity requires a process to have CAP_SYS_ADMIN
