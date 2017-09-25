@@ -21,6 +21,7 @@ Set up i3
 Android automount
 GTK theme
 Font
+    bar icons
 Vim airline theme
 Lock screen + xautolock
 Guest acc
