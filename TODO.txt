@@ -18,8 +18,10 @@ Set up i3
     xrandr
     redshift
     open terminal
+xset
 Android automount
 GTK theme
+    https://github.com/bennofs/etc-nixos/blob/master/conf/desktop.nix
 Font
     bar icons
 Vim airline theme
