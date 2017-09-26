@@ -5,7 +5,8 @@ let
 in
 
 {
-  # Sound
+
+  # SOUND
   hardware.pulseaudio = {
 
     # Proxy all audio via the same sound server.
@@ -18,7 +19,7 @@ in
     support32Bit = true;
   };
 
-  # Display
+  # DISPLAY
   hardware.opengl = {
 
     # Support Direct Rendering for 32-bit apps.
@@ -33,6 +34,14 @@ in
       ];
 
       fontconfig = {
+
+        hinting = {
+          # Disable autohinter for unhinted fonts.
+          autohint = false;
+
+          style = "slight";
+        };
+
         defaultFonts = {
           sansSerif = [ "Roboto" ];
           monospace = [ "Roboto Mono" ];
@@ -53,16 +62,23 @@ in
       };
     };
 
-    # Printing
-    printing = {
-      enable = true;
-
-      # Printer drivers.
-      gutenprint = true;
-    };
-
-  # Input devices
     xserver = {
+
+      displayManager.job.environment = {
+
+        # Scale all windows by specified factor.
+        GDK_SCALE = "2";
+
+        # Compensate GDK_SCALE to make using scale-aware and scale-unaware
+        # applications together possible.
+        GDK_DPI_SCALE = "0.5";
+
+        # Honor screen DPI in QT applications.
+        QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+
+      };
+
+  # INPUT DEVICES
 
       # Keyboard layout.
       layout = "pl";
@@ -87,6 +103,15 @@ in
         naturalScrolling = true;
       };
     };
+
+    # PRINTING
+    printing = {
+      enable = true;
+
+      # Printer drivers.
+      gutenprint = true;
+    };
+
 
     logind.extraConfig = ''
       HandleLidSwitch=suspend
