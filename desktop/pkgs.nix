@@ -21,6 +21,7 @@
       }
     )
     scrot
+    termite
     visualvm
     # (wine.override { pulseaudioSupport = true; })
     # winetricks
