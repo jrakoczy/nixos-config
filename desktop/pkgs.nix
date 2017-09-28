@@ -4,7 +4,7 @@
   environment.systemPackages = with pkgs; [
     arandr
     cdrkit                   # CD/DVD utilities.
-    # chromium
+    chromium
     evince
     ffmpeg
     # keepass
