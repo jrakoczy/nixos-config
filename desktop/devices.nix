@@ -31,6 +31,7 @@ in
       fonts = with pkgs; [
         roboto
         roboto-mono
+        iosevka
       ];
 
       fontconfig = {
@@ -43,8 +44,8 @@ in
         };
 
         defaultFonts = {
-          sansSerif = [ "Roboto" ];
-          monospace = [ "Roboto Mono" ];
+          sansSerif = [ "Iosevka" ];
+          monospace = [ "Iosevka" ];
         };
       };
    };
