@@ -7,7 +7,7 @@
     chromium
     evince
     ffmpeg
-    # keepass
+    keepass
     lemonbar-xft
     # libreoffice
     mpv
