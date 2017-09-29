@@ -5,7 +5,7 @@
     xserver = {
       enable = true;
 
-      windowmanager.i3 = {
+      windowManager.i3 = {
         enable = true;
 
         # use customized i3 version.
@@ -34,7 +34,7 @@
 
       # vertical synchronization using the specified method.
       # this allows to avoid screen tearing.
-      vsync = "opengl";
+      vSync = "opengl";
 
       # mark-wmwin-focued - try to detect wm windows and mark them as active.
       # mark-ovredir-focused — mark all non-wm but override-redirect windows active
@@ -55,7 +55,7 @@
       # detect-client-leader — use wm_client_leader to group windows, and consider windows
       #                        in the same group focused at the same time. wm_transient_for
       #                        has higher priority if --detect-transient is enabled, too.
-      extraoptions = ''
+      extraOptions = ''
         mark-wmin-focused = true
         mark-ovredir-focused = true
         use-ewmh-active-win = true
@@ -87,8 +87,8 @@
         style = "slight";
       };
 
-      defaultfonts = {
-        sansserif = [ "iosevka" ];
+      defaultFonts = {
+        sansSerif = [ "iosevka" ];
         monospace = [ "iosevka" ];
       };
     };
