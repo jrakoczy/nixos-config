@@ -1,4 +1,6 @@
 Tmux
+ check if all vim plugins work
+ https://github.com/lifepillar/vim-solarized8/issues/1
 
 .zshrc
 
@@ -46,6 +48,7 @@ Shortcuts
         copying
     .zshrc
         unbind ctrl moving
+    Tmux
     vim shortcuts
         !! vim-unimpaired !!
         rename var/method
