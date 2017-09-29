@@ -56,3 +56,5 @@ Shortcuts
         text object selection
         fuzzy search out of home dir
         close(/save?) session
+
+Add licenses
