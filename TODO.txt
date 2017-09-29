@@ -1,38 +1,58 @@
-vim shortcuts
-    !! vim-unimpaired !!
-    rename var/method
-    find usages
-    go to def
-    tabs
-    yank history
-    indent blocks
-    text object selection
-    fuzzy search out of home dir
-    close(/save?) session
-vim — system clipboard
-vim — auto pluginstall plugclean
-vim indent guides colorscheme
-Set up i3
-  Revamp scr, song, wal and vol scripts + notifications
-  Bind keys
-    xrandr
-    redshift
-    open terminal
-xset
-Android automount
+nixos-config
+    Move fonts to desktop-env.nix
+
+Termite
+    copying
+
+.zshrc
+
+Bar
+    network manager
+    disk space
+    proc/mem usage
+
+Rofi
+    themes
+
+Vim
+    system clipboard
+    indent guides colorscheme
+    xcape vim Esc
+
+Font
+    Artwiz Lemon
+    Bar icons
+
 GTK theme
     https://github.com/bennofs/etc-nixos/blob/master/conf/desktop.nix
-Font
-    bar icons
-Vim airline theme
+
 Lock screen + xautolock
-Guest acc
-Set up urxvt/termite/else? + bind super + enter
-Compton
-xcape vim Esc
-passwords SHAs
-Keymaps
-.zshrc
+Android automount
 .gitignore
-Rofi themes
-Move over terminal (Alt+b Alt+f + vim mode)
+    passwords SHAs
+Guest acc
+Git annex
+Printers
+
+Shortcuts
+    rofi execute/open file
+    i3
+        xrandr
+        redshift
+        openterminal
+        lock
+        screen
+    Termite
+        vim mode
+        copying
+    vim shortcuts
+        !! vim-unimpaired !!
+        rename var/method
+        find usages
+        go to def
+        tabs
+        yank history
+        indent blocks
+        text object selection
+        fuzzy search out of home dir
+        close(/save?) session
