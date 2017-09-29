@@ -33,6 +33,8 @@
     zip
   ];
 
+  programs.tmux.enable = true;
+
   # Mtr needs leveraged privileges.
   security.wrappers = {
     mtr.source = "${pkgs.mtr}/bin/mtr";
