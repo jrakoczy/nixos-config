@@ -27,29 +27,6 @@ in
     driSupport32Bit = true;
   };
 
-  fonts = {
-      fonts = with pkgs; [
-        roboto
-        roboto-mono
-        iosevka
-      ];
-
-      fontconfig = {
-
-        hinting = {
-          # Disable autohinter for unhinted fonts.
-          autohint = false;
-
-          style = "slight";
-        };
-
-        defaultFonts = {
-          sansSerif = [ "Iosevka" ];
-          monospace = [ "Iosevka" ];
-        };
-      };
-   };
-
   services = {
 
     # Auto-adjust the screen's color temperature depending on the current time.
@@ -64,20 +41,6 @@ in
     };
 
     xserver = {
-
-      displayManager.job.environment = {
-
-        # Scale all windows by specified factor.
-        GDK_SCALE = "2";
-
-        # Compensate GDK_SCALE to make using scale-aware and scale-unaware
-        # applications together possible.
-        GDK_DPI_SCALE = "0.5";
-
-        # Honor screen DPI in QT applications.
-        QT_AUTO_SCREEN_SCALE_FACTOR = "1";
-
-      };
 
   # INPUT DEVICES
 
@@ -105,7 +68,7 @@ in
       };
     };
 
-    # PRINTING
+  # PRINTING
     printing = {
       enable = true;
 
@@ -113,7 +76,7 @@ in
       gutenprint = true;
     };
 
-
+  # BATTERY/SHUT DOWN
     logind.extraConfig = ''
       HandleLidSwitch=suspend
       HandlePowerKey=hibernate

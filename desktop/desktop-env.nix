@@ -5,43 +5,57 @@
     xserver = {
       enable = true;
 
-      windowManager.i3 = {
+      windowmanager.i3 = {
         enable = true;
 
-        # Use customized i3 version.
+        # use customized i3 version.
         package = pkgs.i3-gaps;
       };
+
+      displayManager.job.environment = {
+
+        # Scale all windows by specified factor.
+        GDK_SCALE = "2";
+
+        # Compensate GDK_SCALE to make using scale-aware and scale-unaware
+        # applications together possible.
+        GDK_DPI_SCALE = "0.5";
+
+        # Honor screen DPI in QT applications.
+        QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+      };
+
     };
 
-    # The Compton configuration to fix i3 artifacts.
-    # Based on github.com/dylanaraps/dotfiles.
+    # The compton configuration to fix i3 artifacts.
+    # based on github.com/dylanaraps/dotfiles.
     compton = {
       enable = true;
 
-      # Vertical synchronization using the specified method.
-      # This allows to avoid screen tearing.
-      vSync = "opengl";
+      # vertical synchronization using the specified method.
+      # this allows to avoid screen tearing.
+      vsync = "opengl";
 
-      # mark-wmwin-focued - try to detect WM windows and mark them as active.
-      # mark-ovredir-focused — mark all non-WM but override-redirect windows active
+      # mark-wmwin-focued - try to detect wm windows and mark them as active.
+      # mark-ovredir-focused — mark all non-wm but override-redirect windows active
       #                        (e.g. menus).
-      # use-ewmh-active-win — use EWMH _NET_WM_ACTIVE_WINDOW to determine which
-      #                       window is focused instead of using FocusIn/Out events.
-      # detect-rounded-corners — detect rounded corners and treat them as rectangular 
+      # use-ewmh-active-win — use ewmh _net_wm_active_window to determine which
+      #                       window is focused instead of using focusin/out events.
+      # detect-rounded-corners — detect rounded corners and treat them as rectangular
       #                          when --shadow-ignore-shaped is on.
-      # detect-client-opacity —  detect _NET_WM_OPACITY on client windows, useful for 
-      #                          window managers not passing _NET_WM_OPACITY of client 
-      #                          windows to frame windows. This prevents opacity being 
+      # detect-client-opacity —  detect _net_wm_opacity on client windows, useful for
+      #                          window managers not passing _net_wm_opacity of client
+      #                          windows to frame windows. this prevents opacity being
       #                          ignored for some apps.
-      # paint-on-overlay — painting on X Composite overlay window.
-      # sw-opti — repaint at most once every 1/refresh_rate second. Since vSync "opengl"
+      # paint-on-overlay — painting on x composite overlay window.
+      # sw-opti — repaint at most once every 1/refresh_rate second. since vsync "opengl"
       #           already does it, we disable this option.
-      # detect-transient —  Use WM_TRANSIENT_FOR to group windows, and consider windows 
+      # detect-transient —  use wm_transient_for to group windows, and consider windows
       #                     in the same group focused at the same time.
-      # detect-client-leader — use WM_CLIENT_LEADER to group windows, and consider windows 
-      #                        in the same group focused at the same time. WM_TRANSIENT_FOR 
+      # detect-client-leader — use wm_client_leader to group windows, and consider windows
+      #                        in the same group focused at the same time. wm_transient_for
       #                        has higher priority if --detect-transient is enabled, too.
-      extraOptions = ''
+      extraoptions = ''
         mark-wmin-focused = true
         mark-ovredir-focused = true
         use-ewmh-active-win = true
@@ -53,6 +67,30 @@
         detect-transient = true
         detect-client-leader = true
       '';
+    };
+  };
+
+  fonts = {
+
+    fonts = with pkgs; [
+      roboto
+      roboto-mono
+      iosevka
+    ];
+
+    fontconfig = {
+
+      hinting = {
+        # disable autohinter for unhinted fonts.
+        autohint = false;
+
+        style = "slight";
+      };
+
+      defaultfonts = {
+        sansserif = [ "iosevka" ];
+        monospace = [ "iosevka" ];
+      };
     };
   };
 }
