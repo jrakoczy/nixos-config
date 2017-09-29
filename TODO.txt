@@ -1,10 +1,8 @@
-nixos-config
-    Move fonts to desktop-env.nix
-
-Termite
-    copying
+Tmux
 
 .zshrc
+
+SSH aliases
 
 Bar
     network manager
@@ -18,6 +16,7 @@ Vim
     system clipboard
     indent guides colorscheme
     xcape vim Esc
+    Restore session all tabs
 
 Font
     Artwiz Lemon
@@ -45,6 +44,8 @@ Shortcuts
     Termite
         vim mode
         copying
+    .zshrc
+        unbind ctrl moving
     vim shortcuts
         !! vim-unimpaired !!
         rename var/method
