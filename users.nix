@@ -1,18 +1,24 @@
-{ ... }:
+{ pkgs, ... }:
+
+let
+  isNormalUser = true;
+  coreGroups = [ "networkmanager" ];
+  sudoGroups = coreGroups ++ [ "wheel" ];
+  shell = pkgs.zsh;
+in
 
 {
   users.extraUsers.kuba = {
-    isNormalUser = true;
+    inherit isNormalUser shell;
     home = "/home/kuba";
-    extraGroups = [ "wheel" "networkmanager" ];
-  }
-
+    extraGroups = sudoGroups;
+  };
 
   users.extraUsers.root = {
-    isNormalUser = true;
+    inherit isNormalUser shell;
     home = "/root";
-    extraGroups = [ "wheel" "networkmanager" ];
-  }
+    extraGroups = sudoGroups;
+  };
 
   nix.trustedUsers = [ "@wheel" ];
 }

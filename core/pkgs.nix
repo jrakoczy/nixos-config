@@ -33,7 +33,16 @@
     zip
   ];
 
-  programs.tmux.enable = true;
+  programs = {
+    tmux.enable = true;
+
+    zsh = {
+      enable = true;
+
+      # A Zsh plugin manager.
+      ohMyZsh.enable = true;
+    };
+  };
 
   # Mtr needs leveraged privileges.
   security.wrappers = {
