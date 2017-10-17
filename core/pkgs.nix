@@ -35,13 +35,7 @@
 
   programs = {
     tmux.enable = true;
-
-    zsh = {
-      enable = true;
-
-      # A Zsh plugin manager.
-      ohMyZsh.enable = true;
-    };
+    zsh.enable = true;
   };
 
   # Mtr needs leveraged privileges.
