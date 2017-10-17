@@ -1,8 +1,7 @@
-Tmux
- check if all vim plugins work
- https://github.com/lifepillar/vim-solarized8/issues/1
-
 .zshrc
+    run tmux automatically
+    tmux -2 (look at oh-my-zsh's tmux autostart)
+    dir aliases (oh-my-zsh's wd)/cycle over dirs/fasd (?)
 
 SSH aliases
 
@@ -16,6 +15,7 @@ Rofi
 
 Vim
     system clipboard
+    yankstack
     indent guides colorscheme
     xcape vim Esc
     Restore session all tabs
@@ -23,6 +23,11 @@ Vim
 Font
     Artwiz Lemon
     Bar icons
+
+i3
+    config
+    colorscheme
+    window content disappears on switch
 
 GTK theme
     https://github.com/bennofs/etc-nixos/blob/master/conf/desktop.nix
@@ -48,6 +53,7 @@ Shortcuts
         copying
     .zshrc
         unbind ctrl moving
+        oh-my-zsh lib/keybindings.sh
     Tmux
     vim shortcuts
         !! vim-unimpaired !!
