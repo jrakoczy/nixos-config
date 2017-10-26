@@ -19,6 +19,7 @@ Vim
     indent guides colorscheme
     xcape vim Esc
     Restore session all tabs
+    reload tabs on branch switch
 
 Font
     Artwiz Lemon
