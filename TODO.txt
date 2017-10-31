@@ -1,7 +1,9 @@
 .zshrc
-    run tmux automatically
-    tmux -2 (look at oh-my-zsh's tmux autostart)
     dir aliases (oh-my-zsh's wd)/cycle over dirs/fasd (?)
+
+.gitconfig
+    aliases
+    else
 
 SSH aliases
 
@@ -55,6 +57,7 @@ Shortcuts
     .zshrc
         unbind ctrl moving
         oh-my-zsh lib/keybindings.sh
+        autocompletion (arrow up, etc.)
     Tmux
     vim shortcuts
         !! vim-unimpaired !!
