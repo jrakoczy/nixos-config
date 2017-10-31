@@ -12,19 +12,25 @@
         package = pkgs.i3-gaps;
       };
 
-      displayManager.job.environment = {
+      displayManager = {
+        job.environment = {
 
-        # Scale all windows by specified factor.
-        GDK_SCALE = "2";
+          # Scale all windows by specified factor.
+          GDK_SCALE = "2";
 
-        # Compensate GDK_SCALE to make using scale-aware and scale-unaware
-        # applications together possible.
-        GDK_DPI_SCALE = "0.5";
+          # Compensate GDK_SCALE to make using scale-aware and scale-unaware
+          # applications together possible.
+          GDK_DPI_SCALE = "0.5";
 
-        # Honor screen DPI in QT applications.
-        QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+          # Honor screen DPI in QT applications.
+          QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+        };
+
+        # Restore a colorscheme and set a wallpaper.
+        sessionCommands = ''
+          wal -R
+        '';
       };
-
     };
 
     # The compton configuration to fix i3 artifacts.
