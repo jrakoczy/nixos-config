@@ -1,12 +1,3 @@
-.zshrc
-    dir aliases (oh-my-zsh's wd)/cycle over dirs/fasd (?)
-
-.gitconfig
-    aliases
-    else
-
-SSH aliases
-
 Bar
     network manager
     disk space
