@@ -65,3 +65,10 @@ Shortcuts
         close(/save?) session
 
 Add licenses
+-----------------
+
+After seting up the system:
+    import GPG keys
+    .gitignore gpgsign = true
+    import SSH keys
+    SSH aliases
