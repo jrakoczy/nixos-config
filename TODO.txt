@@ -1,3 +1,6 @@
+zsh
+    dirstack
+
 Bar
     network manager
     disk space
@@ -52,6 +55,7 @@ Shortcuts
         oh-my-zsh lib/keybindings.sh
         autocompletion (arrow up, etc.)
     Tmux
+        rebind new-pane split-pane so it opens in the current dir, not ~
     vim shortcuts
         !! vim-unimpaired !!
         rename var/method
