@@ -1,3 +1,4 @@
+ncdu
 zsh
     dirstack
 
