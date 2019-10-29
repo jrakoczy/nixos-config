@@ -7,7 +7,7 @@
     cloc
     file
     fzf                     # Fuzzy search.
-    gettext
+    gettext                 # Contains envsubst and some localization utilities
     git
     gnupg
     htop
@@ -16,6 +16,7 @@
     man_db
     manpages
     mtr
+    ncdu                    # Analyze disk usage.
     neovim
     nix-prefetch-scripts
     nix-repl

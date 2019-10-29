@@ -7,7 +7,7 @@
     chromium
     evince
     ffmpeg
-    i3lock
+    i3lock-fancy
     keepass
     lemonbar-xft
     # libreoffice
