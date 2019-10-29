@@ -7,11 +7,12 @@
     chromium
     evince
     ffmpeg
+    i3lock
     keepass
     lemonbar-xft
     # libreoffice
     mpv
-    networkmanagerapplet
+    networkmanager_dmenu
     # openjdk8
     pavucontrol
     rofi                     # A window switcher + run dialogue (substitutes dmenu).

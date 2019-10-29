@@ -1,10 +1,7 @@
-zsh
-    dirstack
-
 Bar
-    network manager
-    disk space
-    proc/mem usage
+    async
+    network status
+    pomodoro
 
 Rofi
     themes
@@ -69,6 +66,10 @@ Shortcuts
         close(/save?) session
 
 Add licenses
+
+Update to 17.09
+    Set update notification
+    RPROMPT variable
 -----------------
 
 After seting up the system:

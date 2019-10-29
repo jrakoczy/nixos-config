@@ -2,11 +2,12 @@
 
 {
   environment.systemPackages = with pkgs; [
-    ag                      # Search for files
+    ag                      # Search for files.
     calc
     cloc
     file
-    fzf
+    fzf                     # Fuzzy search.
+    gettext
     git
     gnupg
     htop
@@ -22,8 +23,9 @@
     python3Packages.flake8
     python3Packages.isort
     python3Packages.neovim
-    python3Packages.yapf
+    python3Packages.yapf    # Code formatter.
     shellcheck
+    sysstat                 # Performance monitoring (RAM, CPU usage, etc.).
     unzip
     usbutils
     wget
