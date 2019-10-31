@@ -17,6 +17,7 @@
     manpages
     mtr
     ncdu                    # Analyze disk usage.
+    mkpassword              # Necessary to generate NixOS password hashes
     neovim
     nix-prefetch-scripts
     nix-repl

@@ -14,11 +14,5 @@ in
     extraGroups = sudoGroups;
   };
 
-  users.extraUsers.root = {
-    inherit isNormalUser shell;
-    home = "/root";
-    extraGroups = sudoGroups;
-  };
-
   nix.trustedUsers = [ "@wheel" ];
 }
