@@ -21,6 +21,6 @@
       ./hardware.nix
       ./passwords.nix
       ./system.nix
-      ./tmp-users.nix
+      ./users.nix
     ];
 }
