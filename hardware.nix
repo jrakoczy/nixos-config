@@ -1,40 +1,50 @@
 { config, lib, pkgs, ... }:
 
 {
-  boot = {
-    
-    # The GRUB installation device. 
-    loader.grub.device = "/dev/sda"; # Change to by-serial-id ref
-   
-    initrd = {
-      luks.devices = [
-        {
-          name = "root";
-          device = "/dev/disk/by-uuid/c4ddc6c8-60fb-4446-8722-d86e5f1ff9a5";
-        }
-      ];
+  imports =
+    [ <nixpkgs/nixos/modules/installer/scan/not-detected.nix>
+    ];
 
-      # Include all modules necessary for mounting the root device.
-      availableKernelModules = [ "ata_piix" "ohci_pci" "sd_mod" "sr_mod" ];
-     };
-  };
+  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "sd_mod" ];
+  boot.initrd.kernelModules = [ "dm-snapshot" ];
+  boot.kernelModules = [ "kvm-intel" ];
+  boot.extraModulePackages = [ ];
+
+  boot.initrd.luks.devices = [
+    {
+      name = "system";
+      device = "/dev/disk/by-uuid/e44750dd-38a0-4b84-b90e-1b896e575b74";
+    }
+    {
+      name = "data";
+      device = "/dev/disk/by-uuid/70574997-1313-4099-a521-575620defb61";
+    }
+  ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/dfffcb1f-e810-4129-b882-3793daee5839";
+    { device = "/dev/disk/by-uuid/78c3adca-fd59-48f3-93fa-e3b93ff07ab4";
+      fsType = "ext4";
+    };
+
+  fileSystems."/home" =
+    { device = "/dev/disk/by-uuid/efd9cadc-eacb-4e02-aae5-8fab364e0ec2";
+      fsType = "ext4";
+    };
+
+  fileSystems."/data" =
+    { device = "/dev/disk/by-uuid/a4179701-fc5a-44a2-91dc-480474489716";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/D74E-7F65";
+    { device = "/dev/disk/by-uuid/5A96-F549";
       fsType = "vfat";
     };
 
   swapDevices =
-    [ 
-      { device = "/dev/disk/by-uuid/c23e6b56-609f-42ad-9717-d64b5013fedc"; }
+    [ { device = "/dev/disk/by-uuid/876ec74c-ccf0-4358-911b-abc1050a5370"; }
     ];
 
-  virtualisation.virtualbox.guest.enable = true;
+  nix.maxJobs = lib.mkDefault 4;
+  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
 }
-
-
