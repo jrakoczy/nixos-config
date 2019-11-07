@@ -17,14 +17,12 @@
     manpages
     mtr
     ncdu                    # Analyze disk usage.
-    mkpassword              # Necessary to generate NixOS password hashes
     neovim
     nix-prefetch-scripts
-    nix-repl
     python3
     python3Packages.flake8
     python3Packages.isort
-    python3Packages.neovim
+    python3Packages.pynvim
     python3Packages.yapf    # Code formatter.
     shellcheck
     sysstat                 # Performance monitoring (RAM, CPU usage, etc.).

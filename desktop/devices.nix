@@ -27,13 +27,17 @@ in
     driSupport32Bit = true;
   };
 
+  # Required for Redshift to auto-calibrate.
+  location = {
+    latitude = 52.2;
+    longitude = 21.0;
+  };
+
   services = {
 
     # Auto-adjust the screen's color temperature depending on the current time.
     redshift = {
       enable = true;
-      latitude = "52.2";
-      longitude = "21.0";
       brightness = {
         day = screenBrightness;
         night = screenBrightness;
@@ -73,7 +77,7 @@ in
       enable = true;
 
       # Printer drivers.
-      gutenprint = true;
+      drivers = with pkgs; [ gutenprint ];
     };
 
   # BATTERY/SHUT DOWN

@@ -40,7 +40,8 @@
 
       # vertical synchronization using the specified method.
       # this allows to avoid screen tearing.
-      vSync = "opengl";
+      vSync = true;
+      refreshRate = 60;
 
       # mark-wmwin-focued - try to detect wm windows and mark them as active.
       # mark-ovredir-focused — mark all non-wm but override-redirect windows active
@@ -61,18 +62,17 @@
       # detect-client-leader — use wm_client_leader to group windows, and consider windows
       #                        in the same group focused at the same time. wm_transient_for
       #                        has higher priority if --detect-transient is enabled, too.
-      extraOptions = ''
-        mark-wmin-focused = true
-        mark-ovredir-focused = true
-        use-ewmh-active-win = true
-        detect-rounded-corners = false
-        detect-client-opacity = false
-        refresh-rate = 60
-        paint-on-overlay = true
-        sw-opti = false
-        detect-transient = true
-        detect-client-leader = true
-      '';
+      settings = {
+        mark-wmin-focused = true;
+        mark-ovredir-focused = true;
+        use-ewmh-active-win = true;
+        detect-rounded-corners = false;
+        detect-client-opacity = false;
+        paint-on-overlay = true;
+        sw-opti = false;
+        detect-transient = true;
+        detect-client-leader = true;
+      };
     };
   };
 
@@ -89,8 +89,6 @@
       hinting = {
         # disable autohinter for unhinted fonts.
         autohint = false;
-
-        style = "slight";
       };
 
       defaultFonts = {
