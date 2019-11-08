@@ -22,11 +22,6 @@ in
 
       # Define explicitly.
       channel = "https://nixos.org/channels/nixos-${nixosVersion}";
-
-      # Extend NIX_PATH with custom pkgs repo prior to auto-upgrade.
-      # Otherwise it might not be able to resolve '<jrakoczy-pkgs>'
-      # reference used through the configuration.
-      flags = [ "-I" "jrakoczy-pkgs=https://github.com/jrakoczy/aux-nixpkgs/archive/master.tar.gz" ];
     };
 
     # Keep full control over package versions.
