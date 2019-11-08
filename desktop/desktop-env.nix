@@ -5,6 +5,11 @@
     xserver = {
       enable = true;
 
+      desktopManager = {
+        default = "none";
+        xterm.enable = false;
+      };
+
       windowManager.i3 = {
         enable = true;
 
@@ -13,6 +18,7 @@
       };
 
       displayManager = {
+        lightdm.background = "#ededeb";
         job.environment = {
 
           # Scale all windows by specified factor.

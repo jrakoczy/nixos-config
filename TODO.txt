@@ -1,3 +1,7 @@
+wal + wallpaper
+copy paste into terminal
+.gitconfig
+
 Bar
     async
     network status
