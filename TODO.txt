@@ -25,6 +25,7 @@ Font
     Bar icons
 
 i3
+    rounded corners
     config
     colorscheme
     window content disappears on switch

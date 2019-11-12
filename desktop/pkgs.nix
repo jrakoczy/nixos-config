@@ -3,18 +3,23 @@
 {
   environment.systemPackages = with pkgs; [
     arandr
+    arc-theme
+    arc-icon-theme
     cdrkit                   # CD/DVD utilities.
     chromium
     evince
     ffmpeg
+    gimp
     i3lock-fancy
-    keepass
+    keepassxc
     lemonbar-xft
+    lxappearance
     # libreoffice
     mpv
     networkmanager_dmenu
     # openjdk8
-    pavucontrol
+    pavucontrol              # Pulse audio settings.
+    pywal                    # Generate colorschemes.
     rofi                     # A window switcher + run dialogue (substitutes dmenu).
     (
       texlive.combine {
@@ -31,7 +36,6 @@
     xrandr-invert-colors
   ] ++ (with jrakoczyPkgs; [
     desktop-environment      # Manage dot-file the Nix way.
-    pywal                      # Adjust colorscheme to wallpaper
   ]);
 
   # Grsecurity requires a process to have CAP_SYS_ADMIN
