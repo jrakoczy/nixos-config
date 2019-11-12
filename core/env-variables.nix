@@ -8,6 +8,7 @@
   nix.nixPath = [
     "/nix/store"
     "/nix/var/nix/profiles/per-user/kuba/profile"
+    "/home/kuba/.nix-defexpr/channels_root"
     "nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos"
     "nixos-config=/etc/nixos/configuration.nix:/etc/nixos:/nix/var/nix/profiles/per-user/root/channels"
   ];
