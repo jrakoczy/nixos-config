@@ -48,6 +48,9 @@
       # this allows to avoid screen tearing.
       vSync = true;
       refreshRate = 60;
+      shadow = true;
+      shadowOpacity = "0.4";
+      shadowOffsets = [ (-8) (-8) ];
 
       # mark-wmwin-focued - try to detect wm windows and mark them as active.
       # mark-ovredir-focused — mark all non-wm but override-redirect windows active
