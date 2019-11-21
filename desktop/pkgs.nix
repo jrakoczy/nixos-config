@@ -19,6 +19,7 @@
     networkmanager_dmenu
     # openjdk8
     pavucontrol              # Pulse audio settings.
+    python2
     pywal                    # Generate colorschemes.
     rofi                     # A window switcher + run dialogue (substitutes dmenu).
     (

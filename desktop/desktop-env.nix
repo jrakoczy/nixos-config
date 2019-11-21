@@ -90,7 +90,7 @@
     fonts = with pkgs; [
       roboto
       roboto-mono
-      iosevka
+      material-icons
     ];
 
     fontconfig = {

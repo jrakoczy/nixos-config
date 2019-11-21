@@ -1,12 +1,14 @@
-.gitconfig
+networkmanager_dmenu
+bar
+functional keys
+test play
+check disk space
 
-Bar
-    async
-    network status
-    pomodoro
-
+qt arc
 Rofi
-    themes
+termite
+.gitconfig
+xbanish
 
 Vim
     system clipboard
@@ -18,28 +20,20 @@ Vim
 
 envtest bug
 
-Font
-    Artwiz Lemon
-    Bar icons
-
 i3
-    rounded corners
     config
     colorscheme
-    window content disappears on switch
-
-GTK theme
-    https://github.com/bennofs/etc-nixos/blob/master/conf/desktop.nix
 
 Lock screen + xautolock
 Android automount
 .gitignore
     passwords SHAs
-Guest acc
 Git annex
 Printers
+Notifications?
 
-Shortcuts
+Keybindings
+    compose key
     rofi execute/open file
     i3
         xrandr
@@ -69,10 +63,6 @@ Shortcuts
         close(/save?) session
 
 Add licenses
-
-Update to 17.09
-    Set update notification
-    RPROMPT variable
 -----------------
 
 After seting up the system:
