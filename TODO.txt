@@ -1,9 +1,7 @@
-networkmanager_dmenu
-bar
-functional keys
-test play
-check disk space
+greeter
+functional keys (mute, play, airplane mode, brightness)
 
+cursor
 qt arc
 Rofi
 termite

@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     arandr
+    arc-kde-theme
     arc-theme
     arc-icon-theme
     cdrkit                   # CD/DVD utilities.
@@ -34,6 +35,7 @@
     # (wine.override { pulseaudioSupport = true; })
     # winetricks
     wmctrl
+    xorg.xbacklight               # change screen brightness
     xbanish                  # Hide a cursor when typing.
     xrandr-invert-colors
   ] ++ (with jrakoczyPkgs; [

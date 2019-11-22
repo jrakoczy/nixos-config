@@ -18,7 +18,18 @@
       };
 
       displayManager = {
-        lightdm.background = "#ededeb";
+        lightdm = {
+          # TODO switch with a nix store path.
+          background = "${/home/kuba/pictures/wallpapers/stars-at-night.png}";
+          greeters.enso = {
+            enable = true;
+            theme = {
+              package = pkgs.arc-theme;
+              name = "Arc";
+            };
+            iconTheme.package = pkgs.arc-icon-theme;
+          };
+        };
         job.environment = {
 
           # Scale all windows by specified factor.
@@ -101,8 +112,8 @@
       };
 
       defaultFonts = {
-        sansSerif = [ "iosevka" ];
-        monospace = [ "iosevka" ];
+        sansSerif = [ "Roboto" ];
+        monospace = [ "Roboto Mono" ];
       };
     };
   };
