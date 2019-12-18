@@ -1,6 +1,8 @@
 greeter
 functional keys (mute, play, airplane mode, brightness)
-
+bar mute red icon
+fullscreen hide bar
+plug monitor brightness control + auto-scale
 cursor
 qt arc
 Rofi

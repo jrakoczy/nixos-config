@@ -20,6 +20,9 @@ in
   };
 
   # DISPLAY
+
+  # Control screen brightness.
+  hardware.brightnessctl.enable = true;
   hardware.opengl = {
 
     # Support Direct Rendering for 32-bit apps.

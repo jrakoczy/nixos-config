@@ -35,7 +35,6 @@
     # (wine.override { pulseaudioSupport = true; })
     # winetricks
     wmctrl
-    xorg.xbacklight               # change screen brightness
     xbanish                  # Hide a cursor when typing.
     xrandr-invert-colors
   ] ++ (with jrakoczyPkgs; [
