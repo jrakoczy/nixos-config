@@ -2,7 +2,7 @@
 
 let
   isNormalUser = true;
-  coreGroups = [ "networkmanager" "video" ];
+  coreGroups = [ "networkmanager" "video" "docker" ];
   sudoGroups = coreGroups ++ [ "wheel" ];
   shell = pkgs.zsh;
 in

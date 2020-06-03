@@ -72,6 +72,9 @@ in
         middleEmulation = true;
 
         naturalScrolling = true;
+
+        tapping = false;
+        tappingDragLock = false;
       };
     };
 
@@ -80,7 +83,7 @@ in
       enable = true;
 
       # Printer drivers.
-      drivers = with pkgs; [ gutenprint ];
+      drivers = with pkgs; [ gutenprint gutenprintBin cups-bjnp ];
     };
 
   # BATTERY/SHUT DOWN

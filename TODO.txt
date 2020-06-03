@@ -1,4 +1,5 @@
-greeter
+greeter — wallpaper in assets
+chromium extension declarative
 functional keys (mute, play, airplane mode, brightness)
 bar mute red icon
 fullscreen hide bar
@@ -9,6 +10,7 @@ Rofi
 termite
 .gitconfig
 xbanish
+fzf config hidden files
 
 Vim
     system clipboard

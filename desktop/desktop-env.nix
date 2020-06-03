@@ -20,7 +20,7 @@
       displayManager = {
         lightdm = {
           # TODO switch with a nix store path.
-          background = "${/home/kuba/pictures/wallpapers/stars-at-night.png}";
+          # background = "${/home/kuba/pictures/wallpapers/stars-at-night.png}";
           greeters.enso = {
             enable = true;
             theme = {

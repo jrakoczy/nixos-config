@@ -6,7 +6,7 @@ let
   # package updates and clean ups.
   maintenanceTime = "20:00";
 
-  nixosVersion = "19.09";
+  nixosVersion = "20.03";
 in
 
 {
